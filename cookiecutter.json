@@ -2,5 +2,6 @@
     "author_name": "",
     "extension_name": "myextension",
     "project_short_description": "A JupyterLab extension.",
+    "api_endpoint": "hello",
     "repository": "https://github.com/my_name/myextension"
 }
