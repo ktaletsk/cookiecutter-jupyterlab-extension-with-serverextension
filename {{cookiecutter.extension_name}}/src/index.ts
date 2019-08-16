@@ -48,8 +48,7 @@ const extension: JupyterFrontEndPlugin<void> = {
   id: '{{ cookiecutter.extension_name }}',
   autoStart: true,
   requires: [JupyterFrontEnd.IPaths],
-  activate: activate;
-  }
+  activate: activate
 };
 
 export default extension;
