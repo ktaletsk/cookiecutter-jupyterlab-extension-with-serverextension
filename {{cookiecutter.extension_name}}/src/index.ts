@@ -24,7 +24,7 @@ function activate(
   app: JupyterFrontEnd,
   paths: JupyterFrontEnd.IPaths,
 ): void {
-  console.log('JupyterLab extension jupyterlab-test is activated!');
+  console.log('JupyterLab extension {{ cookiecutter.extension_name }} is activated!');
 
   // Make request to Jupyter API
   const settings = ServerConnection.makeSettings();
@@ -36,7 +36,7 @@ function activate(
     })
     .catch(() => {
       console.warn(
-        'The jupyterlab-test server extension appears to be missing.'
+        'The {{ cookiecutter.extension_name }} server extension appears to be missing.'
       );
     });
 }
