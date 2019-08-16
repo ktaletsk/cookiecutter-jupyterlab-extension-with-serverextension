@@ -5,7 +5,7 @@
 
 ## Requirements
 
-* JupyterLab >= 0.30.0 
+* JupyterLab >= 1.0.0 
 
 ## Install
 
@@ -24,6 +24,10 @@ The `jlpm` command is JupyterLab's pinned version of
 ```bash
 # Clone the repo to your local environment
 # Move to {{ cookiecutter.extension_name }} directory
+# Install serverextension
+pip install .
+# Register serverextension
+jupyter serverextension enable --py {{ cookiecutter.extension_name }}
 # Install dependencies
 jlpm
 # Build Typescript source
